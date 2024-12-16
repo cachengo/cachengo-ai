@@ -14,7 +14,7 @@ setup(
         'ffmpeg-python==0.2.0',
         'numpy==1.24.1',
         'opencv-python==4.7.0.68',
-        # 'rknn-toolkit-lite2==2.3.0'
+        'rknn-toolkit-lite2==2.3.0',
         ],
     classifiers=[
         'Programming Language :: Python :: 3',
