@@ -20,6 +20,19 @@ Basic structure of package is
 └── tests
     ├── __init__.py
 ```
+## Prerequisites
+
+Ensure that RKNPU userspace dependencies are installed.
+```
+git clone https://github.com/airockchip/rknn-toolkit2.git
+sudo cp ./rknn-toolkit2/rknpu2/runtime/Linux/librknn_api/aarch64/* /usr/lib
+sudo cp ./rknn-toolkit2/rknpu2/runtime/Linux/rknn_server/aarch64/usr/bin/* /usr/bin/
+```
+
+Ensure that opencv dependencies are installed
+```
+apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
+```
 
 ## Installation
 Package can be installed by running
