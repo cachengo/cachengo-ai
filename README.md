@@ -49,7 +49,7 @@ Coming soon...
 ```py
 from cachengoai import rknn
 
-# Initialize model
+# Initialize default yolov5 model with COCO classes
 model = rknn.model()
 # Run inference on video file and return list of detected classes
 _,_,objs = rknn.detect(model,"./TestVideo.mp4",conf_thresh=0.6)
