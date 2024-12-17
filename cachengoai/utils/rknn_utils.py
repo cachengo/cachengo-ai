@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-from image_utils import get_frames
+from cachengoai.utils.image_utils import get_frames
 
 IMG_SIZE = 640
 
