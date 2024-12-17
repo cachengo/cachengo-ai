@@ -15,6 +15,8 @@ setup(
         'numpy==1.24.1',
         'opencv-python==4.7.0.68',
         'rknn-toolkit-lite2==2.3.0',
+        'Pillow==9.4.0',
+        'torch==1.13.1',
         ],
     classifiers=[
         'Programming Language :: Python :: 3',
