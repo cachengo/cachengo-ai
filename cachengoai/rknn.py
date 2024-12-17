@@ -21,7 +21,7 @@ def model(model_path=path.join(path.dirname(__file__), 'yolov5s-640-640.rknn')):
 def detect(model,video_path="",conf_thresh=0.7,frames=[]):
     try:
         preds,dets,objs =  perform_inference(video_path,model,conf_thresh,frames)
-        return objs
+        return preds,dets,objs
     except Exception as e:
         print(e)
         return "Couldn't perform inference."
