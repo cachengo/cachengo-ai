@@ -38,8 +38,9 @@ def perform_inference(video_path,model,conf_thresh,frames):
                 input_data.append(np.transpose(input2_data, (2, 3, 0, 1)))
 
                 boxes, classes, scores = yolov5_post_process(input_data,frame)
-                for obj in classes:
-                    objs.append(obj)
+                if classes is not None:
+                    for obj in classes:
+                        objs.append(obj)
 
                 if boxes is not None and boxes[0] is not None:
                     for i,box in enumerate(boxes[0]):
