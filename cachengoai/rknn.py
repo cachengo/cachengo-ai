@@ -19,6 +19,7 @@ def model(model_path=path.join(path.dirname(__file__), 'yolov5s-640-640.rknn')):
         return "Model could not be loaded"
 
 def detect(model,video_path="",conf_thresh=0.7,frames=[]):
+    print("started detection")
     try:
         preds,dets,objs =  perform_inference(video_path,model,conf_thresh,frames)
         return preds,dets,objs
